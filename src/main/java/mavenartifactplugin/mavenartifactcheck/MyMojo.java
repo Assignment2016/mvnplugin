@@ -11,9 +11,6 @@ import java.util.regex.Pattern;
  
 import org.apache.maven.plugin.AbstractMojo; 
 import org.apache.maven.plugin.MojoExecutionException; 
-import org.apache.maven.plugins.annotations.LifecyclePhase; 
-import org.apache.maven.plugins.annotations.Mojo; 
-import org.apache.maven.project.MavenProject; 
  
  
 /** 
@@ -60,7 +57,7 @@ private final Pattern GAV_PARSER = Pattern.compile("^([^:]*):([^:]*):([^:]*)$");
  
 public void execute() throws MojoExecutionException { 
      try { 
-     	 
+     	 //hello
     	 doWork(); 
        
      } catch (Exception e) { // url is causing trouble
